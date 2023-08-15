@@ -48,6 +48,6 @@ contract SimpleSwapTest is Test {
     function testSwapWithSignature() public {
         bytes memory userSignature;
         // TODO generate userSignature
-        simpleSwap.swap(userSignature, address(userToken), 1 * 10e18);
+        simpleSwap.swapWithSignature(userSignature, address(userToken), 1 * 10e18);
     }
 }
