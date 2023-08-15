@@ -15,13 +15,17 @@ contract SimpleSwap {
         simpleUSD = _simpleUSD;
     }
 
+    // @dev User calling swap() directly
     function swap(address userToken, uint256 amount) external {
         _swap(msg.sender, userToken, amount);
     }
 
+    // @dev User provide signature and submitted to blockchain by relayer
     function swapWithSignature(bytes calldata signature, address userToken, uint256 amount) external {
         address authedUser;
+
         // TODO verify signature and get the authedUser value
+
         _swap(authedUser, userToken, amount);
     }
 
