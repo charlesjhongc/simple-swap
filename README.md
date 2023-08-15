@@ -5,6 +5,7 @@ Simple Swap 是一個簡單的 swap dapp，用戶 swap 時提供任意代幣任�
 # Step
 
 -   `yarn install`
+-   `git submodule update --init --recursive`
 -   Install foundry (https://book.getfoundry.sh/getting-started/installation)
 
 # Note
